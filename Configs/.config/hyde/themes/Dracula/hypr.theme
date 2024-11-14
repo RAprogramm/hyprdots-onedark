@@ -27,14 +27,6 @@ group {
 
 decoration {
     rounding = 2
-    drop_shadow = true
-    shadow_scale = 1
-    shadow_ignore_window = true
-    shadow_offset = 1 2
-    shadow_range = 60
-    shadow_render_power = 3
-    col.shadow = rgba(1E202966)
-    col.shadow_inactive = 0x000000db
 
     blur {
         enabled = yes
@@ -43,6 +35,17 @@ decoration {
         new_optimizations = on
         ignore_opacity = on
         xray = false
+    }
+
+    shadow {
+      enabled = true
+      scale = 1
+      ignore_window = true
+      offset = 1 2
+      range = 60
+      render_power = 3
+      color = rgba(1E202966)
+      color_inactive = 0x000000db
     }
 }
 
